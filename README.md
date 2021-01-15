@@ -10,6 +10,7 @@ Up-to-date news and downloads can be found at [mgba.io](https://mgba.io/).
 Features
 --------
 
+- Added rumble support for Anbernic RG351P.
 - Highly accurate Game Boy Advance hardware support[<sup>[1]</sup>](#missing).
 - Game Boy/Game Boy Color hardware support.
 - Fast emulation. Known to run at full speed even on low end hardware, such as netbooks.
@@ -110,6 +111,14 @@ Compiling
 ---------
 
 Compiling requires using CMake 3.1 or newer. GCC and Clang are both known to work to compile mGBA, but Visual Studio 2013 and older are known not to work. Support for Visual Studio 2015 and newer is coming soon.
+
+#### Build for Ubuntu based systems for RG351P use in Retroarch (64 bit)
+
+`git clone https://github.com/christianhaitian/mgba.git` \
+`cd mgba` \
+`cmake .` \
+`make clean` \
+`make -f Makefile.libretro -j$(nproc)`
 
 #### Docker building
 
