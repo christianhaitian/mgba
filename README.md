@@ -118,7 +118,7 @@ Compiling requires using CMake 3.1 or newer. GCC and Clang are both known to wor
 `cd mgba` \
 `cmake .` \
 `make clean` \
-`make -f Makefile.libretro -j$(nproc)`
+`make -f Makefile.libretro platform=goadvance -j$(nproc)`
 
 #### Docker building
 
